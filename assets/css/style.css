@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-a.relative {
-	position:  absolute;
-	left:  50px;
-}
-
 .navbar a {
 	font-family: 'Montserrat', sans-serif;
-}
-
-.img-fluid {
-	max-width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
+	color: white;
 }
 
 #transition{
@@ -32,7 +21,7 @@ a.relative {
 	left: 0;
 	height:  3px;
 	width:  0%;
-	background: #34efdf;
+	background: #01B7FF;
 	transition: all 0.4s ease;
 }
 
@@ -43,4 +32,12 @@ a.relative {
 .center #transition:before{
 	left:  50%;
 	transform: translateX(-50%);
+}
+
+.zoom img{
+	transition: transform 1s ease;
+}
+
+.zoom:hover img{
+	transform:  scale(1.05);
 }
