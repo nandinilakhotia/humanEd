@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.footer{
-	font-family: 'Montserrat', sans-serif;
-	color: white;
-	text-align: center;
-}
-
 .navbar a {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
@@ -57,4 +51,10 @@
 
 .footer-img{
 	padding: 50px;
+}
+
+.footer{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: center;
 }
