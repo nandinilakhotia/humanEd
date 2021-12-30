@@ -1,0 +1,15 @@
+- name: School of Physics and Astronomy
+  logo: phy.png
+  website: https://www.ph.ed.ac.uk/
+
+- name: School of Informatics
+  logo: inf.png
+  website: https://www.ed.ac.uk/informatics
+
+- name: School of Engineering
+  logo: eng.png
+  website: https://www.eng.ed.ac.uk/
+
+- name: School of Mathematics
+  logo: math.png
+  website: https://www.maths.ed.ac.uk/
