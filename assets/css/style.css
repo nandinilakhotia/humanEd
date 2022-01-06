@@ -57,10 +57,73 @@ body {
 	transform:  scale(1.10);
 }
 
-.line{
-	height: 1px;
+.team-container {
+	width: 225px;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.team-container .image-container {
+	position: relative;
+	top: 0%;
+}
+
+.image-container img {
+	max-width: 100%;
+	height: auto;
+	transition: 1s ease-in-out;
+}
+
+.team-container:hover > .image-container img{
+	transform: scale(1.05);
+}
+
+.info {
+	position: absolute;
+	top: 0%;
+	text-align: center;
 	width: 100%;
-	background: grey;
+	background-color: rgba(0,7,44,0.459);
+	height: 100%;
+	transition: 0.5s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.team-container:hover > .info {
+	visibility: visible;
+	opacity: 1;
+}
+
+.course {
+	color: white;
+	font-size: 10px;
+}
+
+.team-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.info h4 {
+	color: white;
+	margin: 150px 0px;
+}
+
+.info p {
+	color: white;
+	font-size: 12px;
+}
+
+.position {
+	font-size: 15px;
+}
+
+.team-container:hover > .details{
+	top: 80%;
 }
 
 .footer-img{

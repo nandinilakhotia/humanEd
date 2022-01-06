@@ -1,35 +1,30 @@
 - name: Sergio Miguez
   position: President & Co-Founder
-  course: MEng Electronics and Computer Science
-  year: Year 3
+  course: MEng Electronics & Computer Science
   linkedin: https://www.linkedin.com/in/sergio-miguez-aparicio/
   image: Sergio_Miguez.png
 
 - name: Anaïs Jeger
   position: Secretary & Co-Founder
-  couse: BEng Electronics and Computer Science
-  year: Year 3
+  course: BEng Electronics & Computer Science
   linkedin: https://www.linkedin.com/in/ana%C3%AFs-jeger-40ab52197/
   image: Anais_Jeger.png
 
 - name: Divyansh Gupta
   position: Treasurer
   course: BEng Chemical Engineering
-  year: Year 3
   linkedin: https://www.linkedin.com/in/divyansh-gupta-65a505202/
   image: Divyansh_Gupta.png
 
 - name: Henry Wang
   position: Sponsorship & Marketing Manager
-  course: UPDATE
-  year: UPDATE
-  linkedin: UPDATE
+  course: MSc Science & Religion
+  linkedin: https://www.linkedin.com/in/thisishenryw/
   image: Henry_Wang.png
 
 - name: Juan Del Àguila Ferrandis
   position: Technical Director
-  course: BEng Computer Science and Mathematics
-  year: Year 3
+  course: BEng Computer Science & Mathematics
   linkedin: https://www.linkedin.com/in/juan-del-aguila-ferrandis/
   image: Juan_del_Aguila.png
 
@@ -43,6 +38,5 @@
 - name: Yordan Tsvetkov
   position: Technical Director
   course: BEng Mechanical Engineering
-  year: Year 2
   linkedin: https://www.linkedin.com/in/yordan-tsvetkov-784b7619b/
   image: Yordan_Tsvetkov.jpg

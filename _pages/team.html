@@ -3,4 +3,33 @@ layout: default_layout
 title: "HumanEd - Team"
 permalink: /team
 ---
-TEAMMMMMMMMMM
+<h1>BLAHHHHH</h1>
+<br>
+
+<div class = "team-grid">
+
+	{% for member in site.data.committee %}
+
+		<div class = "team-container">
+
+			<div class = "image-container">
+				<img src="/assets/images/committee/{{ member.image }}">
+			</div>
+
+			<div class = "info">
+				<a href = "{{ member.linkedin }}"></a>
+				<h4>{{ member.name }}
+					<br><span class="position"> {{ member.position }} </span>
+					<br><span class="course"> {{ member.course }} </span>
+				</h4>
+			</div>
+		</div>
+
+	{% endfor %}
+
+</div>
+
+
+
+<br>
+<h1>BLAHHHHH</h1>
