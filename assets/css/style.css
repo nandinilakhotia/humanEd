@@ -106,6 +106,8 @@ body {
 	grid-template-columns: auto auto auto;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
+	height: 100%;
+	overflow: auto;
 }
 
 .info h4 {
