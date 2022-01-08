@@ -138,14 +138,25 @@ body {
 	text-align: center;
 }
 
-.footer a{
+.attr a{
 	color: white;
 	text-decoration: none;
 }
 
-.footer a:hover{
+.attr a:hover{
 	color: #01B7FF;
 	text-decoration: none;
+}
+
+.footer a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.edi {
+	padding: 5px;
+  background: white;
+  border-radius: 50%;
 }
 
 .fa {
@@ -155,6 +166,10 @@ body {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+}
+
+.fa a:hover {
+	color: red;
 }
 
 .fa-linkedin {
