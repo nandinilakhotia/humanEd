@@ -149,10 +149,41 @@ body {
 }
 
 .fa {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 30px;
-  width: 50px;
+ 	padding: 20px;
+  font-size: 70px;
+  width: 70px;
   text-align: center;
   text-decoration: none;
+  margin: 5px 2px;
 }
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  }
+
+.fa-instagram {
+  background: #DD2A7B;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #24292F;
+  color: white;
+}
+
+.fa-envelope {
+	background: red;
+	color: white;
+}
+
+.fa-graduation-cap {
+	background: #01B3A5;
+	color: white;
+}
+
