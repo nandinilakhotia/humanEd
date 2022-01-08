@@ -9,20 +9,21 @@ permalink: /team
 <div class = "team-grid">
 
 	{% for member in site.data.committee %}
-
+		
 		<div class = "team-container">
-
 			<div class = "image-container">
 				<img src="assets/images/committee/{{ member.image }}">
 			</div>
 
-			<div class = "info">
-				<a href = "{{ member.linkedin }}"></a>
-				<h4>{{ member.name }}
-					<br><span class="position"> {{ member.position }} </span>
-					<br><span class="course"> {{ member.course }} </span>
-				</h4>
-			</div>
+				<div class = "info">
+					
+					<h4>{{ member.name }}
+						<br><span class="position"> {{ member.position }} </span>
+						<br><span class="course"> {{ member.course }} </span>
+						<br><a href="{{ member.linkedin }}" class="fa fa-linkedin"></a>
+					</h4>
+		
+				</div>
 		</div>
 
 	{% endfor %}
