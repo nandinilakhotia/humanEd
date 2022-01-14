@@ -105,8 +105,14 @@ body {
 .team-header {
 	background: #008080;
 	color: #FFFFFD;
-	height: 330px;
+	height: 280px;
 	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.team-header {
+		height: 360px;
+	}
 }
 
 .course {
