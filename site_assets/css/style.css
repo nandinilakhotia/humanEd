@@ -103,10 +103,9 @@ body {
 
 .team-grid {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
-	overflow-x: scroll;
 }
 
 .info h4 {
@@ -138,12 +137,12 @@ body {
 	text-align: center;
 }
 
-.attr a{
+.footer .attr a{
 	color: white;
 	text-decoration: none;
 }
 
-.attr a:hover{
+.footer .attr a:hover{
 	color: #01B7FF;
 	text-decoration: none;
 }
@@ -198,4 +197,3 @@ body {
 	background: #01B3A5;
 	color: white;
 }
-
