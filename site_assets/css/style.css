@@ -111,6 +111,7 @@ body {
 
 @media (max-width: 768px) {
 	.team-header {
+		color: red;
 		height: 360px;
 	}
 }
