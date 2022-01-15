@@ -75,6 +75,18 @@ body {
 
 /* Teams Page - Member Cards */
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 #team-transition{
 	position: relative;
 	padding: 6px 0;
