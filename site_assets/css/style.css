@@ -38,12 +38,6 @@ body {
 	padding-top: 	90px;
 }
 
-.navbar-center {
-	position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-}
-
 #transition{
 	position: relative;
 	padding: 6px 0;
