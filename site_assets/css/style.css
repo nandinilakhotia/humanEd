@@ -22,6 +22,7 @@ body {
 
 /* Navigation Bar */
 
+
 .navbar a {
 	font-size: 15px;
 }
@@ -34,30 +35,34 @@ body {
 	padding-left: 10px;
 }
 
-#transition{
-	position: relative;
-	padding: 6px 0;
+@media only screen and (min-width: 768px){
+
+	#transition{
+		position: relative;
+		padding: 6px 0;
+	}
+
+	#transition:before{
+		content:  '';
+		position:  absolute;
+		bottom: 0;
+		left: 0;
+		height:  3px;
+		width:  0%;
+		background: #01B7FF;
+		transition: all 0.4s ease;
+	}
+
+	#transition:hover:before{
+		width: 100%;
+	}
+
+	.center #transition:before{
+		left:  50%;
+		transform: translateX(-50%);
+	}
 }
 
-#transition:before{
-	content:  '';
-	position:  absolute;
-	bottom: 0;
-	left: 0;
-	height:  3px;
-	width:  0%;
-	background: #01B7FF;
-	transition: all 0.4s ease;
-}
-
-#transition:hover:before{
-	width: 100%;
-}
-
-.center #transition:before{
-	left:  50%;
-	transform: translateX(-50%);
-}
 
 /* Image Effect - Zoom */
 
