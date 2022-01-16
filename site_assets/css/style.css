@@ -34,10 +34,6 @@ body {
 	padding-left: 10px;
 }
 
-.nav2{
-	padding-top: 	90px;
-}
-
 #transition{
 	position: relative;
 	padding: 6px 0;
@@ -74,18 +70,6 @@ body {
 }
 
 /* Teams Page - Member Cards */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-
-.grid-item {
-  font-size: 30px;
-  text-align: center;
-}
-
 #team-transition{
 	position: relative;
 	padding: 6px 0;
@@ -152,7 +136,7 @@ body {
 	text-align: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.team-header {
 		height: 360px;
 	}
