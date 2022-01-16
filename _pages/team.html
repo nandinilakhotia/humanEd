@@ -20,33 +20,42 @@ permalink: /team
 
 		<div class="collapse navbar-collapse" id="navbarSupported">
 		    <ul class="navbar-nav mx-auto">
-				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#">Committee</a> </li>
-				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#">Biomimetic Hand</a> </li>
-				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#">Exoskeleton</a> </li>
-				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#">Sponsorship and Marketing</a> </li>
-				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#">All</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#committee">Committee</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#biomimetic">Biomimetic Hand</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#exoskeleton">Exoskeleton</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#snm">Sponsorship and Marketing</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#committee">All</a> </li>
 			</ul>
 		</div>
 	</div>
 </nav>
 
-<h2 style="padding-top: 30px; padding-left: 8%;">committee</h2>
+<h2 id="committee" style="padding-top: 30px; padding-left: 8%;">committee</h2>
 
 <div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>  
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
-  <div class="grid-item">9</div>  
+
+	{% for member in site.data.committee %}
+		<div class="grid-item">		
+			<div class = "team-container">
+			<div class = "image-container">
+				<img src="site_assets/images/committee/{{ member.image }}">
+			</div>
+
+			<div class = "info">
+				<h4>{{ member.name }}
+					<br><span class="position"> {{ member.position }} </span>
+					<br><span class="course"> {{ member.course }} </span>
+					<br><a href="{{ member.linkedin }}" class="fa fa-linkedin"></a>
+				</h4>		
+			</div>
+		</div>
+		</div>
+	{% endfor %}
 </div>
 
-<h2>biomimetic hand</h2>
-<h2>exoskeleton</h2>
-<h2>sponsorship and marketing</h2>
+<h2 id="biomimetic">biomimetic hand</h2>
+<h2 id="exoskeleton">exoskeleton</h2>
+<h2 id="snm">sponsorship and marketing</h2>
 
 <!--<div class = "team-grid">
 	{% for member in site.data.committee %}
