@@ -33,29 +33,14 @@ permalink: /team
 <h2 id="committee" style="padding-top: 30px; padding-left: 8%;">committee</h2>
 
 <div class="grid-container">
-
 	{% for member in site.data.committee %}
-		<div class="grid-item">		
-			<div class = "team-container">
-			<div class = "image-container">
-				<img src="site_assets/images/committee/{{ member.image }}">
-			</div>
-
-			<div class = "info">
-				<h4>{{ member.name }}
-					<br><span class="position"> {{ member.position }} </span>
-					<br><span class="course"> {{ member.course }} </span>
-					<br><a href="{{ member.linkedin }}" class="fa fa-linkedin"></a>
-				</h4>		
-			</div>
-		</div>
+		<div class="grid-item">
+			<img src = "site_assets/images/committee/{{ member.image }}">
 		</div>
 	{% endfor %}
 </div>
 
-<h2 id="biomimetic">biomimetic hand</h2>
-<h2 id="exoskeleton">exoskeleton</h2>
-<h2 id="snm">sponsorship and marketing</h2>
+
 
 <!--<div class = "team-grid">
 	{% for member in site.data.committee %}
