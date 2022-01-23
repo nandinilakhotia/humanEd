@@ -32,15 +32,58 @@ permalink: /team
 
 <h2 id="committee" style="padding-top: 30px; padding-left: 8%;">committee</h2>
 
-<div class="grid-container">
+<section class = "team">
+	<div class = "container">
+		<div class ="row">
+			{% for member in site.data.committee %}
+				<div class = "col-md-3 profile text-center">
+					<div class = "img-box">
+						<img src="site_assets/images/committee/{{ member.image }}" class="img-responsive" width="230px">
+						<ul>
+							<li><a href="{{ member.linkedin }}" class= "fa fa-linkedin"></a></li>
+						</ul>
+					</div>
+					<h2>{{ member.name }}</h2>
+					<h3>{{ member.position }}</h3>
+					<p>{{ member.course }}</p>
+				</div>
+			{% endfor %}
+		</div>
+</section>
+
+
+<!--<div class="container1">
 	{% for member in site.data.committee %}
-		<div class="grid-item">
-			<img src = "site_assets/images/committee/{{ member.image }}">
+		<div class="our-team">
+			<div class="pic">
+				<img src="site_assets/images/committee/{{ member.image }}" width=225px;>
+			</div>
+			<div class="team-content">
+				<h3 class="title">{{ member.name }}</h3>
+				<span class="post">{{ member.position }}</span>
+				<span class="courses">{{ member.course }}</span>
+			</div>
+			<ul class="social">
+				<li><a href="#" class= "fa fa-facebook"></a></li>
+				<li><a href="#" class= "fa fa-twitter"></a></li>
+				<li><a href="#" class= "fa fa-instagram"></a></li>
+				<li><a href="#" class= "fa fa-linkedin"></a></li>
+			</ul>
 		</div>
 	{% endfor %}
-</div>
+</div> -->
 
-
+<!--<div class="grid-container">
+	{% for member in site.data.committee %}
+		<div class="grid-item">
+			<div class = "outer-container">
+				<div class = "member-container">
+					<img src = "site_assets/images/committee/{{ member.image }}">
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div> -->
 
 <!--<div class = "team-grid">
 	{% for member in site.data.committee %}
