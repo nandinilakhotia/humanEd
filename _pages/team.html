@@ -19,18 +19,18 @@ permalink: /team
 		<div class = "row justify-content-center">
 			<div class = "form-group col-auto">
 				<label for="InputName">Name</label>
-		    	<input type="name" class="form-control" id="InputName" placeholder="Enter name">
+		    	<input type="name" class="form-control" id="InputName" placeholder="Enter name" required="true">
 			</div>
 			
 			<div class = "form-group col-auto">
 				<label for="InputEmail">Email address</label>
-		    	<input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
+		    	<input type="email" class="form-control" id="InputEmail" placeholder="Enter email" required="true">
 		    	
 			</div>
 		</div>
 		<br>
 		<small class="form-text" style="color:#FFFFFD;">We'll never share your details with anyone else.</small><br>
-  		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+  		<input type="checkbox" class="form-check-input" id="exampleCheck1" required="true">
   		<label class="form-text" for="defaultCheck1" style="color:#FFFFFD;">I agree to HumanEd contacting me, and give them permission to store and process my data.</label>
     	<br><button type="submit" class="btn btn-danger" style="margin-top: 10px;">SUBSCRIBE</button>
 	</form>
@@ -54,26 +54,30 @@ permalink: /team
 	</div>
 </nav>
 
-<h2 id="committee" style="padding-top: 30px; padding-left: 9.5%;">committee</h2>
-
-<section class = "team">
-	<div class = "container">
-		<div class ="row">
-			{% for member in site.data.committee %}
-				<div class = "col-md-3 profile text-center">
-					<div class = "img-box">
-						<a class="zoom-team" href = " {{ member.linkedin }}"><img src="site_assets/images/committee/{{ member.image }}" class=" img-responsive" width="240px"></a>
+<div id="committee">
+	<br>
+</div>
+	<h2 style="padding-top: 30px; padding-left: 9.5%;">committee</h2>
+	<br><br>
+	<section class = "team">
+		<div class = "container">
+			<div class ="row">
+				{% for member in site.data.committee %}
+					<div class = "col-md-3 profile text-center">
+						<div class = "img-box">
+							<a class="zoom-team" href = " {{ member.linkedin }}"><img src="site_assets/images/committee/{{ member.image }}" class=" img-responsive" width="240px"></a>
+						</div>
+						<h2>{{ member.name }}</h2>
+						<h3>{{ member.position }}</h3>
+						<p> {{ member.year }} , {{ member.course }}</p>
 					</div>
-					<h2>{{ member.name }}</h2>
-					<h3>{{ member.position }}</h3>
-					<p> {{ member.year }} , {{ member.course }}</p>
-				</div>
-			{% endfor %}
-		</div>
-</section>
+				{% endfor %}
+			</div>
+	</section>
 
-<h2 id="snm" style="padding-top: 30px; padding-left: 9.5%;">sponsorship & marketing</h2>
-
+<div id="snm">
+<h2 style="padding-top: 30px; padding-left: 9.5%;">sponsorship & marketing</h2>
+<br><br>
 <section class = "team">
 	<div class = "container">
 		<div class ="row">
@@ -89,6 +93,7 @@ permalink: /team
 			{% endfor %}
 		</div>
 </section>
+</div>
 <!--
 <div class = "team-grid">
 	{% for member in site.data.committee %}
