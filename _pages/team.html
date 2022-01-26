@@ -5,38 +5,12 @@ permalink: /team
 ---
 
 <div class = "team-header">
-	<br><br>
-	<h2>Meet the Team.</h2>
+	<h2 style= "padding-top: 50px">Meet the Team.</h2>
 	<br>
-	<p>An eager group of students focused on the long-term research, development and implementation of new technologies in the field of robotics.<br>
-	If the field of robotics interests you as, just as much as it interests us feel free to join us!</p><br>
-	<a class="btn btn-danger" href="https://forms.office.com/r/K4tMfburpr" role="button" target="_blank">JOIN US</a>
-
-	<br><br>
-
-	<p>Sign up to receive exclusive information on our projects, events, and other exciting news before anyone else! No spam, we promise :)</p>
-
-	<form action="https://getform.io/f/af03dc9a-452f-4a87-a13b-18c84655807c" class = "form-inline" method="POST">
-		<div class = "row justify-content-center">
-			<div class = "form-group col-auto">
-				<label for="InputName">Name</label>
-		    	<input type="name" name = "name" class="form-control" id="InputName" placeholder="Enter name" required="true">
-			</div>
-			
-			<div class = "form-group col-auto">
-				<label for="InputEmail">Email address</label>
-		    	<input type="email" name = "email" class="form-control" id="InputEmail" placeholder="Enter email" required="true">
-		    	
-			</div>
-		</div>
-		<br>
-		<small class="form-text" style="color:#FFFFFD;">We'll never share your details with anyone else.</small><br>
-  		<input type="checkbox" name = "t&c" class="form-check-input" id="exampleCheck1" required="true">
-  		<label class="form-text" for="defaultCheck1" style="color:#FFFFFD;">I agree to HumanEd contacting me, and give them permission to store and process my data.</label>
-    	<br><button type="submit" class="btn btn-danger" style="margin-top: 10px;">SUBSCRIBE</button>
-	</form>
+	<p style="padding-bottom: 15px;">An eager group of students focused on the long-term research, development and implementation of new technologies in the field of robotics.
+	If the field of robotics interests you as, just as much as it interests us feel free to join us!</p>
+	<a class="btn btn-danger" href="/humanEd/join-us" role="button">JOIN US</a>
 </div>
-
 <nav class="navbar py-1 navbar-expand-md navbar-dark sticky-top" style="background-color: #00221C; top: 86px;">
 	<div class="container-fluid">
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupported" aria-controls="navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +19,7 @@ permalink: /team
 
 		<div class="collapse navbar-collapse" id="navbarSupported">
 		    <ul class="navbar-nav mx-auto">
-				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#committee">Committee</a> </li>
+				<li class="nav-item center"> <a class="nav-link comm" id="team-transition" onClick="document.getElementById('comm').scrollTo(700);" href="#committee">Committee</a> </li>
 				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#biomimetic">Biomimetic Hand</a> </li>
 				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#exoskeleton">Exoskeleton</a> </li>
 				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#snm">Sponsorship and Marketing</a> </li>
@@ -55,11 +29,8 @@ permalink: /team
 	</div>
 </nav>
 
-<div id="committee">
+<div id="committee"><h2 style="padding-top: 30px; padding-left: 9.5%;">committee</h2></div>
 	<br>
-</div>
-	<h2 style="padding-top: 30px; padding-left: 9.5%;">committee</h2>
-	<br><br>
 	<section class = "team">
 		<div class = "container">
 			<div class ="row">
@@ -76,9 +47,13 @@ permalink: /team
 			</div>
 	</section>
 
-<div id="snm">
+<div id="biomimetic"><h2 style="padding-top: 30px; padding-left: 9.5%;">biomimetic</h2></div>
+<div id="exoskeleton"><h2 style="padding-top: 30px; padding-left: 9.5%;">exoskeleton</h2></div>
+
+
+<div id="snm"></div>
 <h2 style="padding-top: 30px; padding-left: 9.5%;">sponsorship & marketing</h2>
-<br><br>
+<br>
 <section class = "team">
 	<div class = "container">
 		<div class ="row">
@@ -94,29 +69,3 @@ permalink: /team
 			{% endfor %}
 		</div>
 </section>
-</div>
-
-<button id="xyz" onclick="externalFunction()">Hi</button>
-
-
-<!--
-<div class = "team-grid">
-	{% for member in site.data.committee %}
-		<div class="grid-item">		
-			<div class = "team-container">
-				<div class = "image-container">
-					<img src="site_assets/images/committee/{{ member.image }}">
-				</div>
-			</div>
-
-			<div class = "info">
-				<h4>{{ member.name }}
-					<br><span class="position"> {{ member.position }} </span>
-					<br><span class="course"> {{ member.course }} </span>
-					<br><a href="{{ member.linkedin }}" class="fa fa-linkedin"></a>
-				</h4>		
-			</div>
-		</div>
-		</div>
-	{% endfor %}
-</div>-->

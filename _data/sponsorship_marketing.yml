@@ -1,20 +1,26 @@
 - name: Nandini Lakhotia
-  year: Year 3
-  course: BEng Computer Science & Mathematics
+  year: Batch of 2023
+  course: BSc Artificial Intelligence & Computer Science
   linkedin: https://www.linkedin.com/in/nandinilakhotia/
-  image: Nandini_Lakhotia.png
+  image: Nandini_Lakhotia.jpg
 
 - name: Josie Harrison
-  year: Year 2
-  course: Awaiting Confirmation
+  year: Batch of 2024
+  course: Graphic Design
   linkedin: Awaiting Confirmation
   image: Josie_Harrison.jpg
   
-- name: Niraj Chekutty
-  year: Year 3
+- name: Neeraj Chekutty
+  year: Batch of 2023
   course: BSc Artificial Intelligence & Computer Science
   linkedin: https://www.linkedin.com/in/neeraj-chekutty-b176141b6/
-  image: N/A
+  image: Neeraj_Chekutty.jpg
+
+- name: Thomas Ralph
+  year: Year 3
+  course: BEng Mechanical Engineering
+  linkedin: https://www.linkedin.com/in/thomas-ralph-269190166/
+  image: Thomas_Ralph.png
 
 - name: Leticia Diaz Robledo
   year: Awaiting Confirmation
@@ -22,8 +28,3 @@
   linkedin: Awaiting Confirmation
   image: 
 
-- name: Thomas Ralph
-  year: Year 3
-  course: BEng Mechanical Engineering
-  linkedin: https://www.linkedin.com/in/thomas-ralph-269190166/
-  image: Thomas_Ralph.png
