@@ -161,6 +161,13 @@ body {
 	opacity: 0;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
 .team-container:hover > .info {
 	visibility: visible;
 	opacity: 1;
