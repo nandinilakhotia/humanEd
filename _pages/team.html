@@ -30,9 +30,7 @@ permalink: /team
 </nav>
 
 <div id="committee">
-</div>
-	<h2 style="padding-top: 30px; padding-left: 9.5%;">committee</h2>
-	<br>
+	<h2 style="padding-top: 30px; padding-left: 9.5%; padding-bottom: 30px;">committee</h2>
 	<section class = "team">
 		<div class = "container">
 			<div class ="row">
@@ -48,8 +46,29 @@ permalink: /team
 				{% endfor %}
 			</div>
 	</section>
+</div>
 
-<div id="biomimetic"><h2 style="padding-top: 30px; padding-left: 9.5%;">biomimetic</h2></div>
+<div id="biomimetic">
+	<h2 style="padding-top: 30px; padding-left: 9.5%; padding-bottom: 30px;">biomimetic</h2>
+	<section class = "team">
+		<div class = "container">
+			<div class ="row">
+				{% for member in site.data.biomimetic %}
+					<div class = "col-md-3 profile text-center">
+						<div class = "img-box">
+							<a class="zoom-team" href = " {{ member.linkedin }}"><img src="site_assets/images/biomimetic/{{ member.image }}" class=" img-responsive" width="240px"></a>
+						</div>
+						<h2>{{ member.name }}</h2>
+						<h3>{{ member.position }}</h3>
+						<p> {{ member.year }} , {{ member.course }}</p>
+					</div>
+				{% endfor %}
+			</div>
+	</section>
+</div>
+
+
+
 <div id="exoskeleton"><h2 style="padding-top: 30px; padding-left: 9.5%;">exoskeleton</h2></div>
 
 
