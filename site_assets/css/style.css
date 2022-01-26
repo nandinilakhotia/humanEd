@@ -180,9 +180,18 @@ a.anchor {
 	text-align: center;
 }
 
+.committee {
+	position:absolute; 
+	top:310px;
+}
+
 @media only screen and (max-width: 768px) {
 	.team-header {
-		height: 500px;
+		height: 300px;
+	}
+
+	.committee {
+		top:810px;
 	}
 }
 
