@@ -19,7 +19,7 @@ permalink: /team
 
 		<div class="collapse navbar-collapse" id="navbarSupported">
 		    <ul class="navbar-nav mx-auto">
-				<li class="nav-item center"> <a class="nav-link comm" id="team-transition" href="#committee">Committee</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#committee">Committee</a> </li>
 				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#biomimetic">Biomimetic Hand</a> </li>
 				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#exoskeleton">Exoskeleton</a> </li>
 				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#committee">Sponsorship and Marketing</a> </li>
@@ -72,21 +72,25 @@ permalink: /team
 <div id="exoskeleton"><h2 style="padding-top: 30px; padding-left: 9.5%;">exoskeleton</h2></div>
 
 
-<div id="snm"></div>
-<h2 style="padding-top: 30px; padding-left: 9.5%;">sponsorship & marketing</h2>
-<br>
-<section class = "team">
-	<div class = "container">
-		<div class ="row">
-			{% for member in site.data.sponsorship_marketing %}
-				<div class = "col-md-3 profile text-center">
-					<div class = "img-box">
-						<a class="zoom-team" href = " {{ member.linkedin }}"><img src="site_assets/images/sponsorship_marketing/{{ member.image }}" class=" img-responsive" width="240px" style="height: auto;"></a>
+<div id="sponsorship_marketing">
+	<h2 style="padding-top: 30px; padding-left: 9.5%;">sponsorship & marketing</h2>
+	<section class = "team">
+		<div class = "container">
+			<div class ="row">
+				{% for member in site.data.sponsorship_marketing %}
+					<div class = "col-md-3 profile text-center">
+						<div class = "img-box">
+							{% if member.linkedin %}
+								<a href = " {{ member.linkedin }}"><img src="site_assets/images/sponsorship_marketing/{{ member.image }}" class=" img-responsive zoom-team" width="240px" style="height: auto;"></a>
+							{% else %}
+								<img src="site_assets/images/sponsorship_marketing/{{ member.image }}" class=" img-responsive zoom-team" width="240px" style="height: auto;">
+							{% endif %}
+						</div>
+						<h2>{{ member.name }}</h2>
+						<h3>{{ member.position }}</h3>
+						<p> Class of {{ member.year }} , {{ member.course }}</p>
 					</div>
-					<h2>{{ member.name }}</h2>
-					<h3>{{ member.position }}</h3>
-					<p> {{ member.year }} , {{ member.course }}</p>
-				</div>
-			{% endfor %}
-		</div>
-</section>
+				{% endfor %}
+			</div>
+	</section>
+</div>

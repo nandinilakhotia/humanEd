@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
 
 /* General Style */
 
@@ -81,30 +82,6 @@ body {
 
 /* Teams Page - Member Cards */
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.outer-container {
-	width: 300px;
-	height: auto;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,50%);
-	overflow: hidden;
-
-}
-
 @media only screen and (min-width: 768px){
 	#team-transition{
 		position: relative;
@@ -132,47 +109,6 @@ body {
 	}	
 }
 
-.team-container {
-	width: 225px;
-	height: auto;
-	position: relative;
-	overflow: hidden;
-}
-
-.image-container img {
-	max-width: 100%;
-	height: auto;
-	transition: 1s ease-in-out;
-}
-
-.team-container:hover > .image-container img{
-	transform: scale(1.05);
-}
-
-.info {
-	position: absolute;
-	top: 0%;
-	text-align: center;
-	width: 100%;
-	background-color: rgba(0,7,44,0.459);
-	height: 100%;
-	transition: 0.5s ease-in-out;
-	visibility: hidden;
-	opacity: 0;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
-}
-
-.team-container:hover > .info {
-	visibility: visible;
-	opacity: 1;
-}
-
 .team-header {
 	background: #008080;
 	color: #FFFFFD;
@@ -182,10 +118,10 @@ a.anchor {
 
 .committee {
 	position:absolute; 
-	top:310px;
+	top:700px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 	.team-header {
 		height: 300px;
 	}
@@ -195,38 +131,38 @@ a.anchor {
 	}
 }
 
-.course {
-	color: white;
-	font-size: 10px;
+.profile {
+	margin-top: 25px;
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-.grid-item {
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+.profile .img-box {
+	display: block;
+	position: relative;
 }
 
-.info h4 {
-	color: white;
-	margin: 150px 0px;
+.profile h2 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 20px;
 }
 
-.info p {
-	color: white;
-	font-size: 12px;
+.profile h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
 }
 
-.position {
-	font-size: 15px;
+.profile p {
+	font-size: 13px;
+	font-weight: bold;
 }
 
-.team-container:hover > .details{
-	top: 80%;
+.zoom-team {
+	transition: transform 0.6s ease;
+}
+
+.zoom-team:hover {
+	transform:  scale(1.05);
 }
 
 /* Footer */
@@ -257,7 +193,7 @@ a.anchor {
 	text-decoration: none;
 }
 
-.edi {
+.edi-logo {
 	padding: 5px;
   background: white;
   border-radius: 50%;
@@ -303,63 +239,14 @@ a.anchor {
 	color: white;
 }
 
-.container1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 80%;
-	margin: auto;
-}
-
-.our-team {
-	background: red;
+.join_us-header {
+	/*background-image: url("site_assets/images/blah.jpg");*/
+	position: relative;
+	height:560px;  
+	width: 100vw; 
+	background: black;
+	color: #FFFFFD;
+	font-size: 20px;
 	text-align: center;
 	overflow: hidden;
-	position: relative;
-	margin: 0px 25px;
-	padding: 30px 70px;
-	width: 30%;
-}
-
-.our-team .pic {
-	display: inline-block;
-	width: 230px;
-	height: 130px;
-	margin-bottom: 0px;
-	z-index: 1;
-	position: relative;
-}
-
-.profile {
-	margin-top: 25px;
-}
-
-.profile .img-box {
-	display: block;
-	position: relative;
-}
-
-.profile h2 {
-	font-size: 25px;
-	font-weight: bold;
-	margin-top: 20px;
-}
-
-.profile h3 {
-	font-size: 18px;
-	font-weight: bold;
-	margin-top: 10px;
-}
-
-.profile p {
-	font-size: 13px;
-	font-weight: bold;
-}
-
-.zoom-team img{
-	transition: transform 0.5s ease;
-}
-
-.zoom-team:hover img{
-	transform:  scale(1.03);
 }

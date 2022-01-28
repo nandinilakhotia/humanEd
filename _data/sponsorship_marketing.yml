@@ -1,31 +1,35 @@
+- name: Josie Harrison
+  year: 2024
+  course: Graphic Design
+  linkedin:
+  image: Josie_Harrison.jpg
+
+- name: Leticia Diaz Robledo
+  year: 2023
+  course: BSc Artificial Intelligence and Computer Science
+  linkedin: https://www.linkedin.com/in/leticia-robledo/
+  image: Leticia_Diaz_Robledo.jpg
+
+- name: Mia McMillan
+  year: 2023
+  course: BSc Artificial Intelligence and Computer Science
+  linkedin: 
+  image:
+
 - name: Nandini Lakhotia
-  year: Batch of 2023
+  year: 2023
   course: BSc Artificial Intelligence & Computer Science
   linkedin: https://www.linkedin.com/in/nandinilakhotia/
   image: Nandini_Lakhotia.jpg
 
-- name: Josie Harrison
-  year: Batch of 2024
-  course: Graphic Design
-  linkedin: Awaiting Confirmation
-  image: Josie_Harrison.jpg
-  
 - name: Neeraj Chekutty
-  year: Batch of 2023
+  year: 2023
   course: BSc Artificial Intelligence & Computer Science
   linkedin: https://www.linkedin.com/in/neeraj-chekutty-b176141b6/
   image: Neeraj_Chekutty.jpg
 
-- name: Leticia Diaz Robledo
-  year: Batch of 2023
-  course: BSc Artificial Intelligence and Computer Science
-  linkedin: https://www.linkedin.com/in/leticia-robledo/
-  image: Leticia_Diaz_Robledo.jpg
-  
 - name: Thomas Ralph
-  year: Batch of 2023
+  year: 2023
   course: BEng Mechanical Engineering
   linkedin: https://www.linkedin.com/in/thomas-ralph-269190166/
   image: Thomas_Ralph.png
-
-
