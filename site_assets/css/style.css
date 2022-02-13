@@ -239,18 +239,6 @@ body {
 	color: white;
 }
 
-.join_us-header {
-	background-image: url("site_assets/images/blah.jpg");
-	height:560px;  
-	width: 100%; 
-	/*background: black;
-	color: #FFFFFD;
-	font-size: 20px;
-	text-align: center;
-	overflow: hidden;*/
-}
-
-.test {
-	background-image: url("site_assets/images/blah.jpg");
-	height: 200px;
+.join-us-header {
+	color: white;
 }
